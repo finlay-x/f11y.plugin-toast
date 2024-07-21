@@ -1,0 +1,68 @@
+{
+  "name": "f11y.plugin-toast",
+  "version": "0.0.1",
+  "description": "Toast component plugin for f11y component library.",
+  "exports": {
+    ".": {
+      "import": "./umd/toast.es.js",
+      "require": "./umd/toast.js"
+    },
+    "./umd": "./umd"
+  },
+  "cdn": "umd/toast.min.js",
+  "type": "module",
+  "types": "umd/dts/index.d.ts",
+  "files": [
+    "/umd"
+  ],
+  "jsdelivr": "umd/toast.min.js",
+  "author": "Finlay",
+  "license": "GNU GPL",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/finlay-x/f11y.plugin-toast.git"
+  },
+  "bugs": {
+    "url": "https://github.com/finlay-x/f11y.plugin-toast/issues"
+  },
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rollup -c && tsc",
+    "deploy": "npm run build && npm publish",
+    "storybook": "storybook dev -p 6006"
+  },
+  "keywords": [
+    "toast",
+    "toasts",
+    "f11y",
+    "plugin"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.7",
+    "@babel/eslint-parser": "^7.23.3",
+    "@babel/preset-env": "^7.23.8",
+    "@chromatic-com/storybook": "^1.6.1",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-eslint": "^9.0.5",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-multi-entry": "^6.0.1",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@storybook/addon-essentials": "^8.2.5",
+    "@storybook/addon-interactions": "^8.2.5",
+    "@storybook/addon-links": "^8.2.5",
+    "@storybook/blocks": "^8.2.5",
+    "@storybook/html": "^8.2.5",
+    "@storybook/html-vite": "^8.2.5",
+    "@storybook/test": "^8.2.5",
+    "dts-bundle-generator": "^9.3.1",
+    "eslint-plugin-storybook": "^0.8.0",
+    "rollup": "^4.0.0",
+    "rollup-plugin-filesize": "^10.0.0",
+    "storybook": "^8.2.5"
+  },
+  "homepage": "https://github.com/finlay-x/f11y.plugin-toast#readme",
+  "main": "rollup.config.js"
+}
